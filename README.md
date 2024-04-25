@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/TechEdDan2/Social-proof-section)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/TechEdDan2/Social-proof-section
+- Live Site URL: https://techeddan2.github.io/Social-proof-section/
 
 ## My process
 
