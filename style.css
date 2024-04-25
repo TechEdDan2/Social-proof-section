@@ -1,0 +1,208 @@
+/* CSS Variables */
+:root {
+    /* Primary */
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    /* Neutral */
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+    --Project-Font: "League Spartan", sans-serif;
+}
+
+/* Set up a Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Use Body to center main content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: var(--Project-Font);
+}
+
+/* Mobile First Styling */
+main {
+    width: 300px;
+    padding: 0.25rem;
+    margin-top: 2rem;
+    /* border: 1px solid orangered; */
+}
+
+h1 {
+    padding: 1rem;
+    text-align: center;
+    color: var(--Very-Dark-Magenta);
+}
+
+p {
+    line-height: 1.25rem;
+}
+
+.mainText {
+    text-align: center;
+    color: var(--Dark-Grayish-Magenta);
+    padding-bottom: 1.5rem;
+}
+
+.ratingBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: var(--Very-Dark-Magenta)
+}
+
+.starReview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--Light-Grayish-Magenta);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+}
+
+.star {
+    width: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+article {
+    background-color: var(--Very-Dark-Magenta);
+    padding: 1.75rem;
+    border-radius: 0.5rem;
+}
+
+.profImg {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    /* border: 1px solid orange; */
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: var(--Light-Grayish-Magenta);
+}
+
+.verified {
+    color: var(--Soft-Pink);
+
+}
+
+.cardPara {
+    color: var(--Light-Grayish-Magenta);
+    font-weight: 400;
+}
+
+/* Attribution Footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* ********************** */
+/* responsive for Desktop */
+/* ********************** */
+@media(min-width: 1050px) {
+    main {
+        display: flex;
+        width: 1000px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section {
+        flex: 2;
+        padding-right: 6rem;
+    }
+
+    h1,
+    .mainText {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding: 0;
+        margin-bottom: 1.5rem;
+        width: 12ch;
+    }
+
+    .mainText {
+        font-size: 13px;
+        width: 40ch;
+    }
+
+    .ratingBox {
+        flex: 3;
+        padding: 1rem;
+    }
+
+    .starReview {
+        width: 55%;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 13px;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .starReview p {
+        margin-left: 1rem;
+    }
+
+    .starReview:nth-child(2) {
+        align-self: center;
+    }
+
+    .starReview:nth-child(3) {
+        align-self: flex-end;
+    }
+
+
+    .cards {
+        flex-direction: row;
+        height: 240px;
+        column-gap: 1rem;
+    }
+
+    article {
+        height: 200px;
+    }
+
+    article:nth-child(2) {
+        align-self: center;
+    }
+
+    article:nth-child(3) {
+        align-self: flex-end;
+    }
+
+}
